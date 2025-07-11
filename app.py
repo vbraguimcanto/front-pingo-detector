@@ -62,7 +62,7 @@ if uploaded_file is not None:
     image_np = np.array(image)
     image_bgr = cv2.cvtColor(image_np, cv2.COLOR_RGB2BGR)
 
-    CONF_THRESHOLD = 0.5
+    CONF_THRESHOLD = 0.4
     largest_box_yolo = None
 
     # ---------- YOLO detection ----------
